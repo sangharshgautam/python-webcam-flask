@@ -18,9 +18,9 @@ class Camera(object):
         self.makeup_artist = makeup_artist
         self.detect_object = detect_object
         print("[INFO] loading model...")
-        prototypes = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'MobileNetSSD_deploy.prototxt.txt')
-        models = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'MobileNetSSD_deploy.caffemodel')
-        self.net = cv2.dnn.readNetFromCaffe(prototypes, models)
+        #prototypes = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'MobileNetSSD_deploy.prototxt.txt')
+        #models = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'MobileNetSSD_deploy.caffemodel')
+        #self.net = cv2.dnn.readNetFromCaffe(prototypes, models)
         thread = threading.Thread(target=self.keep_processing, args=())
         thread.daemon = True
         thread.start()
