@@ -1,9 +1,9 @@
 import threading
 import binascii
 from time import sleep
+#import cv2
 from utils import base64_to_pil_image, pil_image_to_base64
 import numpy as np
-import cv2
 import os
 
 # initialize the list of class labels MobileNet SSD was trained to
